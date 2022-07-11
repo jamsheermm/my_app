@@ -1,11 +1,15 @@
-import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter/material.dart';
 import 'package:my_app/utils/colors.dart';
 
 import 'constants.dart';
 
 class AppStyles {
-  static final appBarTextStyle = GoogleFonts.montserrat(
-    fontSize: Constants.appBarTextSize,
-    color: AppColors.primaryColor,
-  );
+  static const appBarTextStyle = TextStyle(
+      fontSize: Constants.appBarTextSize, fontWeight: FontWeight.bold);
+
+  static const titleStyle =
+      TextStyle(fontSize: Constants.titleTextSize, color: AppColors.titleColor);
+
+  static const subTitleStyle = TextStyle(
+      fontSize: Constants.subTitleTextSize, color: AppColors.subtitleColor);
 }
